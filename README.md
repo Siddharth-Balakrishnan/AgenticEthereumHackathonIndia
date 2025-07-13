@@ -1,6 +1,6 @@
 # Agentic Ethereum Hackathon India
 
-# 🛠 Project Title - [Team Name]
+# Ethereum Based Multi-cloud Federation Secure IAM - [Code Connectors]
 
 Welcome to our submission for the *Agentic Ethereum Hackathon* by Reskilll & Geodework! This repository includes our project code, documentation, and related assets.
 
@@ -8,33 +8,70 @@ Welcome to our submission for the *Agentic Ethereum Hackathon* by Reskilll & Geo
 
 ## 📌 Problem Statement
 
-We addressed the challenge: *“[Problem Statement Title]”*  
-Brief description of the challenge and why it matters.
+Organizations today operate across multiple cloud platforms like AWS, Azure, GCP, Odoo, and more. But Identity and Access Management (IAM) remains fragmented and unsecure
 
 ---
 
+
 ## 💡 Our Solution
 
-*Project Name:* [Your Project Name]  
-A short pitch of your solution — what you built, who it’s for, and why it’s impactful.
+*Project Name:* Ethereum Based Multi-cloud Federation Secure IAM  
+
+We propose a Decentralized Multi-Cloud Federation System that enables a user to authenticate seamlessly across cloud providers using:
+Decentralized Identifiers (DIDs)
+Verifiable Credentials (VCs)
+Zero-Knowledge Proofs (ZKPs)
+Smart Contracts for on-chain verification
+
+This system allows one-time credential issuance and access to multiple clouds without manual IAM synchronization
+
+---
+
+## Execution
+
+### Frontend
+- Directory: `AgenticEthereumHackathonIndia/frontend/project`
+- Command: `npm run dev`
+
+### Backend
+#### Option 1
+- Directory: `AgenticEthereumHackathonIndia/backend/SecureIAM`
+- Commands:
+  ```
+  mvn clean install
+  mvn spring-boot:run
+  ```
+
+#### Option 2
+- Directory: `AgenticEthereumHackathonIndia/backend/SecureIAM/target`
+- Command:
+  ```
+  java -jar SecureIAM-0.0.1-SNAPSHOT.jar
+  ```
+
+### Python Microservice
+- Directory: `AgenticEthereumHackathonIndia/backend/py-services/src`
+- Command:
+  ```
+  uvicorn src.main:app --reload --port 8000
+  ```
 
 ---
 
 ## 🧱 Tech Stack
 
-- 🖥 Frontend: [React / Next.js / etc.]
-- ⚙ Backend: [Node.js / Python / etc.]
-- 🧠 AI: [Llama 3 / LangChain / OpenAI / etc.]
-- 🔗 Blockchain: [Ethereum / Solidity / Foundry / etc.]
-- 🔍 DB/Storage: [IPFS / PostgreSQL / Firebase / etc.]
-- 🚀 Hosting: [Vercel / Netlify / Render / etc.]
+- 🖥 Frontend: React
+- ⚙ Backend: Java Spring Boot
+- Microservices: Python and Java Spring Boot
+- 🧠 AI: LangChain -Future implemented 
+- 🔗 Blockchain: Ethereum, Solidity, Ganache
+- 🔍 DB/Storage: PostgreSQL 
 
 ---
 
 ## 📽 Demo
 
 - 🎥 *Video Link*: [YouTube/Drive Link]  
-- 🖥 *Live App (if available)*: [URL]
 
 ---
 
@@ -42,13 +79,11 @@ A short pitch of your solution — what you built, who it’s for, and why it’
 
 ```bash
 .
-├── frontend/           # Frontend code
-├── backend/            # Backend code
-├── contracts/          # Smart contracts
+├── frontend/project          # Frontend code
+├── backend/SecureIAM          # Backend code
+├── backend/py-services          # Python Microservices
+├── backend/py-services/src/services/zkp-prover         # Smart contracts
 ├── assets/             # PPT, video links, images
 ├── docs/               # Architecture diagram, notes
 ├── README.md           # A detailed description of your project
-├── .env.example
-├── package.json / requirements.txt
-├── yourppt.ppt
 

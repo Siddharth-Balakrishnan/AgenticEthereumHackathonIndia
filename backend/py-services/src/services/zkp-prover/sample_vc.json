@@ -1,0 +1,9 @@
+{
+  "id": "vc:1234",
+  "issuer": "did:issuer:abcd",
+  "credentialSubject": {
+    "id": "did:example:1234",
+    "role": "admin"
+  },
+  "issued": "2025-07-12T10:00:00Z"
+}
